@@ -24,6 +24,6 @@ def square():
 		box(brad)
 		brad.right(5)
 
-	window.exitonclick()
+	window.exitonclick()#lslslslsl
 	
 square()
