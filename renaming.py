@@ -3,8 +3,8 @@ import string
 def renameFiles():
 	file = os.listdir(r"C:\prank")#list the item in the directory in the given path
 	#print (file)
-	rr= os.getcwd()#current working directory
-	print("current working directory is :"+ rr) 
+	r= os.getcwd()#current working directory
+	print("current working directory is :"+ r) 
 	os.chdir(r"C:\prank")#change the directory path
 
 	for f in file:
@@ -12,6 +12,6 @@ def renameFiles():
 																#and second string or anything such as ("abc","ghi","bc=delete character")
 															  #a-g,b-h,c-i,,,,,,string=abcdef------>ghi]def
 		os.rename(f,f.translate(translation_table))			
-	os.chdir(rr) 
+	os.chdir(r) 
 	
 renameFiles()
